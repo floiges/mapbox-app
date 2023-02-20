@@ -1,11 +1,24 @@
 <template>
-  <div ref="mapEl" class="map"></div>
+  <div class="page">
+    <SeamlessScroll class="the-demo-list">
+      <div class="the-demo-list__item">1</div>
+      <div class="the-demo-list__item">2</div>
+      <div class="the-demo-list__item">3</div>
+      <div class="the-demo-list__item">4</div>
+      <div class="the-demo-list__item">5</div>
+      <div class="the-demo-list__item">6</div>
+      <div class="the-demo-list__item">7</div>
+      <div class="the-demo-list__item">8</div>
+    </SeamlessScroll>
+    <div ref="mapEl" class="map"></div>
+  </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
 import maplibreGl from 'maplibre-gl';
 import * as turf from '@turf/turf'
+import SeamlessScroll from './components/SeamlessScroll.vue';
 
 const mapEl = ref(null)
 let map
@@ -137,7 +150,19 @@ onMounted(async () => {
 })
 </script>
 
-<style>
+<style lang="scss">
+.page {
+  display: flex;
+}
+.the-demo-list {
+  width: 100px;
+  height: 180px;
+  &__item {
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
 .map {
   width: 100vw;
   height: 100vh;

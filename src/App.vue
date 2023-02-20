@@ -1,5 +1,8 @@
 <template>
-  <div ref="mapEl" class="map"></div>
+  <div class="page">
+
+    <div ref="mapEl" class="map"></div>
+  </div>
 </template>
 
 <script setup>
@@ -164,6 +167,10 @@ onMounted(() => {
 </script>
 
 <style>
+.page {
+  display: flex;
+  flex-direction: row;
+}
 .map {
   width: 600px;
   height: 400px;
