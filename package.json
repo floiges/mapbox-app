@@ -1,0 +1,22 @@
+{
+  "name": "mapbox-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "axios": "^1.3.3",
+    "maplibre-gl": "^2.4.0",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "fs-extra": "^11.1.0",
+    "lodash": "^4.17.21",
+    "vite": "^4.1.0"
+  }
+}
