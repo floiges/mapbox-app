@@ -22,7 +22,7 @@ const initOptions = {
 }
 
 const fetchGeoJSON = async (areaCode) => {
-  const res = await fetch(`../.temp/merged-geojson/${areaCode}.json`, {
+  const res = await fetch(`.temp/merged-geojson/${areaCode}.json`, {
     headers: {
       'Content-Type': 'application/json'
     }
